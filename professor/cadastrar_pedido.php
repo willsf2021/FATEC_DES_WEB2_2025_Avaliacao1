@@ -1,5 +1,10 @@
 <?php
 session_start();
+
+if(isset($_SESSION['tipoUsuario']) && $_SESSION['tipoUsuario'] == "bibliotecario"){
+    header("Location: ../dashboard_biblio.php");
+    exit();
+}
 if ($_SERVER['REQUEST_METHOD'] == "POST" && (isset($_SESSION['loggedin']) || $_SESSION['loggedin'] == true) && $_SESSION['tipoUsuario'] == "professor") {
 
     if (!empty($_POST['tituloLivro']) && !empty($_POST['autor']) && !empty($_POST['editora']) && !empty($_POST['isbn'])) {

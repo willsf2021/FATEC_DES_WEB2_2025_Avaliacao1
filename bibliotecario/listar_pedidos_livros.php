@@ -1,6 +1,11 @@
 <?php
 session_start();
 
+if (isset($_SESSION['tipoUsuario']) && $_SESSION['tipoUsuario'] == "professor") {
+    header("Location: ../dashboard_professor.php");
+    exit();
+}
+
 if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true || $_SESSION['tipoUsuario'] !== "bibliotecario") {
     header("Location: index.php");
     exit;
@@ -300,7 +305,7 @@ if (file_exists($filename)) {
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  
+
 </body>
 
 </html>
