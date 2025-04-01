@@ -71,6 +71,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         .btn-custom:hover {
             background-color: #0056b3;
         }
+
+        body {
+            background: url('./assets/bg.jpg');
+        }
     </style>
 </head>
 

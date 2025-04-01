@@ -6,7 +6,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true || $_SESSION
     exit;
 }
 
-$filename = "../professor/list_de_pedidos.txt";
+$filename = "../professor/pedidos.txt";
 $pedidos = [];
 
 if (file_exists($filename)) {
@@ -33,6 +33,9 @@ if (file_exists($filename)) {
 
         .container {
             margin-top: 50px;
+        }
+        body {
+            background: url('../assets/bg.jpg');
         }
     </style>
 </head>
@@ -62,7 +65,8 @@ if (file_exists($filename)) {
                 <?php endif; ?>
             </tbody>
         </table>
-        <a href="dashboard.php" class="btn btn-primary">Voltar ao Painel</a>
+        <button class="btn btn-logout w-100" onclick="window.history.back();">Voltar</button>
+        <a href="../logout.php" class="btn btn-logout w-100">Sair</a>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

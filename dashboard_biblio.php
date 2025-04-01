@@ -46,6 +46,9 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true || $_SESSION
         .btn-logout:hover {
             background-color: #bb2d3b;
         }
+        body {
+            background: url('./assets/bg.jpg');
+        }
     </style>
 </head>
 
@@ -58,10 +61,10 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true || $_SESSION
                     <a href="bibliotecario/cadastrar_livros.php" class="text-decoration-none text-dark d-block">📚 Cadastrar Livros</a>
                 </li>
                 <li class="list-group-item">
-                    <a href="bibliotecario/listar_pedidos_livros.php" class="text-decoration-none text-dark d-block">📖 Listar Pedidos de Livros</a>
+                    <a href="bibliotecario/listar_pedidos_livros.php" class="text-decoration-none text-dark d-block">📖 Visualizar Pedidos</a>
                 </li>
                 <li class="list-group-item">
-                    <a href="listar_todos_livros.php" class="text-decoration-none text-dark d-block">📙 Listar Todos os Livros</a>
+                    <a href="listar_todos_livros.php" class="text-decoration-none text-dark d-block">📙 Visualizar Livros</a>
                 </li>
             </ul>
             <a href="logout.php" class="btn btn-logout w-100">Sair</a>

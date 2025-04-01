@@ -3,7 +3,7 @@ session_start();
 if ($_SERVER['REQUEST_METHOD'] == "POST" && (isset($_SESSION['loggedin']) || $_SESSION['loggedin'] == true) && $_SESSION['tipoUsuario'] == "professor") {
 
     if (!empty($_POST['tituloLivro']) && !empty($_POST['autor']) && !empty($_POST['editora']) && !empty($_POST['isbn'])) {
-        $filename = "list_de_pedidos.txt";
+        $filename = "pedidos.txt";
         $handle = fopen($filename, file_exists($filename) ? "a" : "w");
 
         $conteudo = [
@@ -106,6 +106,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST" && (isset($_SESSION['loggedin']) || $_S
 
                 <button type="submit" class="btn btn-primary w-100">Cadastrar Livro</button>
             </form>
+            <button class="btn btn-logout w-100" onclick="window.history.back();">Voltar</button>
             <a href="../logout.php" class="btn btn-logout w-100">Sair</a>
         </div>
     </div>
