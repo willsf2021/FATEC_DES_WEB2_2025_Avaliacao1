@@ -300,26 +300,7 @@ if (file_exists($filename)) {
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        // Funções para aprovar/recusar pedidos (seriam implementadas com AJAX)
-        document.querySelectorAll('.btn-approve').forEach(btn => {
-            btn.addEventListener('click', function() {
-                const row = this.closest('tr');
-                // Aqui iria a chamada AJAX para aprovar o pedido
-                alert('Pedido aprovado com sucesso!');
-                row.remove();
-            });
-        });
-
-        document.querySelectorAll('.btn-deny').forEach(btn => {
-            btn.addEventListener('click', function() {
-                const row = this.closest('tr');
-                // Aqui iria a chamada AJAX para recusar o pedido
-                alert('Pedido recusado com sucesso!');
-                row.remove();
-            });
-        });
-    </script>
+  
 </body>
 
 </html>

@@ -1,2 +1,0 @@
-{"Nome do Livro":"Harry Potter","Autor":"asdas","Editora":"asdasd","ISBN":"asdasd","Professor":"professor","Data":"01\/04\/2025 03:57:03"}
-{"Nome do Livro":"Harry pedro","Autor":"asda","Editora":"12341","ISBN":"123123","Professor":"professor","Data":"01\/04\/2025 03:58:55"}

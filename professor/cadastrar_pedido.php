@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST" && (isset($_SESSION['loggedin']) || $_S
             "Data" => date('d/m/Y H:i:s')
         ];
 
-        $linha = json_encode($conteudo) . PHP_EOL; // Usando JSON para melhor estruturação
+        $linha = json_encode($conteudo) . PHP_EOL;
         fwrite($handle, $linha);
         fflush($handle);
         fclose($handle);

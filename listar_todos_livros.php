@@ -12,11 +12,11 @@ $livros = [];
 if (file_exists($filename)) {
     $file = fopen($filename, "r");
     while (($line = fgets($file)) !== false) {
-        $livroData = json_decode(trim($line), true); // Decodifica o JSON
+        $livroData = json_decode(trim($line), true);
         if ($livroData) {
             $livros[] = $livroData;
         } else {
-            // Caso o formato não seja JSON (para compatibilidade com registros antigos)
+
             $livros[] = ['detalhes' => trim($line)];
         }
     }
