@@ -1,1 +1,0 @@
-{"Nome do Livro":"Senhor dos An\u00e9is","Autor":"IESS","Editora":"asdasd","ISBN":"asdasdasda","Professor":"professor","Data":"01\/04\/2025 04:56:33"}
