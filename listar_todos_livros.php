@@ -34,6 +34,9 @@ if (file_exists($filename)) {
         .container {
             margin-top: 50px;
         }
+        body {
+            background: url('./assets/bg.jpg');
+        }
     </style>
 </head>
 
